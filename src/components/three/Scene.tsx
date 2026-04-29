@@ -1,8 +1,8 @@
+/* eslint-disable react-hooks/immutability */
 "use client";
 
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { Suspense, useRef } from "react";
-import * as THREE from "three";
+import { Suspense, useRef, useEffect } from "react";
 import Particles from "./Particles";
 import Geometries from "./Geometries";
 
@@ -16,12 +16,14 @@ function CameraParallax() {
     camera.lookAt(0, 0, 0);
   });
 
-  if (typeof window !== "undefined") {
-    window.addEventListener("mousemove", (e) => {
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
       mouse.current.x = (e.clientX / window.innerWidth) * 2 - 1;
       mouse.current.y = (e.clientY / window.innerHeight) * 2 - 1;
-    });
-  }
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
 
   return null;
 }
