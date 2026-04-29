@@ -6,7 +6,7 @@ import { portfolioData } from "@/data/portfolio";
 export default function About() {
   return (
     <section id="about" className="py-24 relative">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-4 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -15,7 +15,7 @@ export default function About() {
           className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-center"
         >
           <div className="lg:w-1/2">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 flex items-center gap-4">
+            <h2 className="text-3xl md:text-5xl font-bold mb-8 flex items-center gap-4">
               <span className="text-accent font-mono text-xl md:text-2xl">01.</span>
               About Me
             </h2>

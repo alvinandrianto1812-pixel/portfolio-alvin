@@ -35,7 +35,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
-      <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
+      <div className="container mx-auto px-4 md:px-12 flex justify-between items-center">
         <a href="#" className="text-2xl font-bold font-mono text-accent">
           {portfolioData.personalInfo.name.split(" ")[0]}
           <span className="text-foreground">.</span>

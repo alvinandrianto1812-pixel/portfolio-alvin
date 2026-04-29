@@ -8,7 +8,7 @@ import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 export default function Contact() {
   return (
     <section id="contact" className="py-24 relative pb-40">
-      <div className="container mx-auto px-6 md:px-12 text-center">
+      <div className="container mx-auto px-4 md:px-12 text-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -17,7 +17,7 @@ export default function Contact() {
           className="max-w-2xl mx-auto"
         >
           <p className="text-accent font-mono mb-4 text-sm md:text-base">06. What&apos;s Next?</p>
-          <h2 className="text-5xl md:text-6xl font-bold mb-8">Get In Touch</h2>
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 md:mb-8">Get In Touch</h2>
           <p className="text-foreground/70 text-lg leading-relaxed mb-12">
             {portfolioData.personalInfo.tagline}
           </p>

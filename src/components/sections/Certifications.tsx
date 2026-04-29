@@ -7,14 +7,14 @@ import { Award, ExternalLink } from "lucide-react";
 export default function Certifications() {
   return (
     <section id="certifications" className="py-24 relative">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-4 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 flex items-center gap-4">
+          <h2 className="text-3xl md:text-5xl font-bold mb-12 md:mb-16 flex items-center gap-4">
             <span className="text-accent font-mono text-xl md:text-2xl">05.</span>
             Certifications
           </h2>

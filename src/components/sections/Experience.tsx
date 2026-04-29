@@ -9,19 +9,19 @@ export default function Experience() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   return (
     <section id="experience" className="py-24 relative">
-      <div className="container mx-auto px-6 md:px-12 max-w-4xl">
+      <div className="container mx-auto px-4 md:px-12 max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 flex items-center gap-4">
+          <h2 className="text-3xl md:text-5xl font-bold mb-12 md:mb-16 flex items-center gap-4">
             <span className="text-accent font-mono text-xl md:text-2xl">04.</span>
             Experience
           </h2>
 
-          <div className="space-y-12 border-l-2 border-white/10 pl-8 ml-4 md:ml-0 md:pl-0 md:border-none">
+          <div className="space-y-12 border-l-2 border-white/10 pl-6 ml-2 md:ml-0 md:pl-0 md:border-none">
             {portfolioData.experience.map((exp, idx) => (
               <motion.div
                 key={idx}
@@ -32,13 +32,13 @@ export default function Experience() {
                 className="relative md:pl-8 md:border-l-2 md:border-white/10 group hover:border-accent transition-colors"
               >
                 {/* Timeline dot */}
-                <span className="absolute -left-[41px] md:-left-[9px] top-2 w-4 h-4 rounded-full bg-background border-2 border-accent group-hover:bg-accent transition-colors"></span>
+                <span className="absolute -left-[33px] md:-left-[9px] top-2 w-4 h-4 rounded-full bg-background border-2 border-accent group-hover:bg-accent transition-colors"></span>
                 
                 <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
-                  <h3 className="text-2xl font-bold text-foreground">
-                    {exp.role} <span className="text-accent">@ {exp.company}</span>
+                  <h3 className="text-xl sm:text-2xl font-bold text-foreground">
+                    {exp.role} <span className="text-accent block sm:inline">@ {exp.company}</span>
                   </h3>
-                  <span className="font-mono text-sm text-foreground/50 mt-2 md:mt-0">
+                  <span className="font-mono text-xs sm:text-sm text-foreground/50 mt-2 md:mt-0">
                     {exp.period}
                   </span>
                 </div>

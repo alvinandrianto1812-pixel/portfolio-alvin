@@ -20,14 +20,14 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-24 relative">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-4 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 flex items-center gap-4">
+          <h2 className="text-3xl md:text-5xl font-bold mb-12 md:mb-16 flex items-center gap-4">
             <span className="text-accent font-mono text-xl md:text-2xl">03.</span>
             Selected Work
           </h2>
@@ -42,7 +42,7 @@ export default function Projects() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
-                <TiltCard className="p-8 md:p-12">
+                <TiltCard className="p-6 md:p-12">
                   <div className="flex flex-col md:flex-row gap-8 items-start">
                     <div className="flex-1">
                       <div className="flex items-center gap-4 mb-4">
